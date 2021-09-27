@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Autocomplete Search Box | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div style="margin-bottom: 2%;"><a style="text-decoration:none" href="index.html"><p style="color:white;">&#8592; Back to home</p></a></div>
+      <div class="search-input" style="width:100%">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Start typing to search...">
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div>
+        <p class="fixed" style="color:white; margin-top: 1%; font-size: 80%;">POPULAR SEARCHES</p>
+      </div>
+      <div class="flex-item">
+        <ul>
+          <li><p style="color:white; margin-top: 1%; font-size: 110%;">Foundry</p></li>
+          <li><p style="color:white; margin-top: 1%; font-size: 110%;">Gotham</p></li>
+          <li><p style="color:white; margin-top: 1%; font-size: 110%;">Palantir Unlock</p></li>
+          <li><p style="color:white; margin-top: 1%; font-size: 110%;">Supply Chain</p></li>
+          <li><p style="color:white; margin-top: 1%; font-size: 110%;">Data Fabric</p></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/suggestions.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

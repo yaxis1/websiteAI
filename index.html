@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI UNIVERSAL</title>
+<link rel="stylesheet" href="index.css">
+<link href="http://fonts.cdnfonts.com/css/alliance-no1" rel="stylesheet">
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: transparent;;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+        color: #333;
+    }
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <div class="logo"><img src="aiuni.jpeg" width="100px" height="100px"></div>
+            <div class="start" style="width:20%;  margin-right: 7%;"><div class="start1" style="font-family: 'Alliance No.1', sans-serif; "> &#8598; <span style="font-family: 'Alliance No.1', sans-serif; height: 100%;">Get started</span></div></div>
+            <div onclick="location.href='index1.html';" class="search" style="margin-left:4%; height: 10%; width:1%; margin-right:3.4%">
+                <img src="search.png" width="100%" height="100%">
+            </div>
+            <div onclick="location.href='navigation.html';" class="navigation" style="margin-left:4%; height: 10%; width:1%; margin-right: 1%;">
+                <img src="3line.png" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+
+    <section class="toggle-form">
+  <div class="formwrap px-4">
+    <div class="icon-close pos-a"><img src="https://www.solodev.com/_/images/cross.png" alt="Close Button"></div>
+    <p class="text-white mt-4 h3">Try Solodev for Free!</p>
+        <form action="#" method="post" role="form" data-toggle="validator">
+            <div class="form-group margin-top-m">
+              <label for="fname" class="control-label">First name</label>
+              <input type="text" id="fname" name="fname" class="form-control" data-error="Please enter your first name" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="lname" class="control-label">Last name</label>
+              <input type="text" id="lname" name="lname" class="form-control required" data-error="Please enter your last name" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="email_address" class="control-label">Email address</label>
+              <input type="text" id="email_address" name="email_address" class="form-control validate[required,custom[email]]" data-error="Please enter a valid email" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="control-label">Phone number</label>
+              <input type="text" id="phone" name="phone" class="form-control required" data-error="Please enter a valid phone number" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mid-col">
+                <div class="form-group">
+                  <label for="company_size" class="control-label">Company Size?</label>
+                  <select name="company_size" id="company_size" class="form-control required" data-error="Please select your company size" required>
+                    <option value=""></option>
+                    <option value="1-4 employees">1-4 employees</option>
+                    <option value="5-9 employees">5-9 employees</option>
+                    <option value="10-49 employees">10-49 employees</option>
+                    <option value="50-199 employees">50-199 employees</option>
+                    <option value="200-499 employees">200-499 employees</option>
+                    <option value="500-999 employees">500-999 employees</option>
+                    <option value="1000+ employees">1000+ employees</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6 mid-col">
+                <div class="form-group">
+                  <label for="role" class="control-label">Select you role</label>
+                  <select name="role" id="role" class="form-control required" data-error="Please select your role" required>
+                    <option value=""></option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Marketing Professional">Marketing Professional</option>
+                    <option value="Business Executive">Business Executive</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center margin-top-s"><small>By clicking "Submit" you agree to Solodev’s <a href="/terms/">Terms of Service</a>.</small></p>
+            <p class="margin-0"><button type="submit" class="btn btn-lg orange w-100 margin-top-s">Submit</button></p>
+        </form>
+      
+  </div>
+<div class="toggle-bg"></div>
+</section>
+
+    <br>
+    <div class="container">
+        <h1 data-testid="heading" data-animation="header" class="heading" style="opacity: 1;">Foundational Software of Tomorrow. Delivered&nbsp;Today.™</h1>
+    </div>
+    <br>
+    <video class="video" width="80%" preload="auto" loop="true" autoplay="autoplay" controls>
+        <source src="home.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+
+    <div class="flex-container">
+
+        <div class="flex-child magenta">
+        </div>
+  
+        <div class="flex-child green" style="margin-right: 10%; margin-left: -50%;">
+            <h1 class="b_01" id="b_01" style="padding-bottom: 5%;">We build software that empowers organizations to effectively integrate their data, decisions, and operations.</h1>
+        </div>
+    </div>
+    <hr style="width: 80%; margin-left: 10%; margin-bottom: -10%;">
+
+
+    <div class="flex-container" style="margin-top: 10%;">
+
+        <div class="flex-child magenta">
+            <h1 class="heading2" id="heading2" style="width:60%; margin-left: 20%;">Generating Alpha Amidst Continuous Disruption</h1>
+        </div>
+  
+        <div class="flex-child green" style="margin-top: 8%; padding-bottom: 5%">
+            <div class="flex-container" style="margin-right: 20%">
+                <div class="flex-child magenta" >
+                    <p class= "text">
+                        <b class="bold">We are entering an era of continuous disruption.</b>
+                        <br><br>
+                        In this context, Palantir recognizes our customers' existential need to utilize software to generate competitive advantage — or, alpha. Everyone else will find themselves in a perpetual game of catchup.
+                    </p>
+                </div>
+  
+                <div class="flex-child green">
+                    <p class= "text">
+                        We've advanced beyond incremental efficiencies to bring intelligence to the core of everything that matters most to your enterprise. <br><br>
+                        <div class="container2">
+                            <span style="font-family: 'Alliance No.1', sans-serif; font-size: 120%">Learn more about Alpha Generation  &nbsp;&nbsp;&nbsp; &#8594;</span>
+                            <hr style="margin-top:3%" />
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 80%; margin-left: 10%; margin-bottom: -10%;">
+
+    <div style="margin-top: 13%; padding-bottom: 2%">
+        <h1 style="margin-left: 20%; font-size: 600%;" class="platforms">Platforms</h1>
+    </div>
+    <hr style="width: 70%; margin-left: 20%; margin-bottom: -10%;">
+
+    <div class="flex-container" style="margin-top: 4%;">
+
+        <div class="flex-child magenta" >
+            <p style="margin-left: 45%; margin-top:16%" class="foundry"> <span style="font-size: 150%">&#8627;</span> Foundry </p>
+        </div>
+  
+        <div class="flex-child green" style="margin-top: 8%; padding-bottom: 5%">
+            <div class="flex-container" style="margin-right: 20%">
+                <div class="flex-child magenta" >
+                    <h2 class= "text" style="width:140%">
+                        Operating System for the Modern Enterprise
+                    </h2>
+                </div>
+  
+                <div class="flex-child green">
+                    <div class="container2" style="float: right; margin-top:7%"> 
+                        <span style="font-family: 'Alliance No.1', sans-serif;"> Explore Foundry &#8594;</span>
+                        <hr style="margin-top:3%"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 70%; margin-left: 20%; margin-bottom: -10%;">
+
+    <div class="flex-container" style="margin-top: 4%;">
+
+        <div class="flex-child magenta" >
+            <p style="margin-left: 45%; margin-top:16%" class="foundry"> <span style="font-size: 150%">&#8627;</span> Gotham </p>
+        </div>
+  
+        <div class="flex-child green" style="margin-top: 8%; padding-bottom: 5%">
+            <div class="flex-container" style="margin-right: 20%">
+                <div class="flex-child magenta" >
+                    <h2 class= "text" style="width:140%">
+                        Operating System for Global Decision Making
+                    </h2>
+                </div>
+  
+                <div class="flex-child green">
+                    <div class="container2" style="float: right; margin-top:7%"> 
+                        <span style="font-family: 'Alliance No.1', sans-serif;"> Explore Gotham &#8594;</span>
+                        <hr style="margin-top:3%"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 70%; margin-left: 20%; margin-bottom: -10%;">
+
+    <div class="flex-container" style="margin-top: 4%;">
+
+        <div class="flex-child magenta" >
+            <p style="margin-left: 45%; margin-top:16%" class="foundry"> <span style="font-size: 150%">&#8627;</span> Apollo </p>
+        </div>
+  
+        <div class="flex-child green" style="margin-top: 8%; padding-bottom: 5%">
+            <div class="flex-container" style="margin-right: 20%">
+                <div class="flex-child magenta" >
+                    <h2 class= "text" style="width:140%">
+                        Operating System for Continuous Delivery
+                    </h2>
+                </div>
+  
+                <div class="flex-child green">
+                    <div class="container2" style="float: right; margin-top:7%"> 
+                        <span style="font-family: 'Alliance No.1', sans-serif;">Explore Apollo &#8594;</span>
+                        <hr style="margin-top:3%"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div style="margin-top: 2%;  padding-bottom: 5%">
+        <img width="80%" height="50%" src="new.jpg" loading="lazy" style="opacity: 1; margin-left: 10%;" /> 
+    </div>
+    <hr style="width: 80%; margin-left: 10%; margin-bottom: -10%;">
+   
+    <div style="margin-top: 13%; padding-bottom: 2%">
+        <h1 style="margin-left: 20%; font-size: 300%; width:30%" class="power">What Makes Palantir Platforms Powerful</h1>
+    </div>
+
+
+    <div id="boxes" class="boxes" style="margin-left: 10%; margin-right: 10%; width:80% ">
+    <div id="column1">
+      <h5 style="font-size:200%; width:90%; padding-right: 5%;">Day 1 Value</h5>
+      <p class="para"> Our platforms deliver value out of the box. 
+      <br /><br />
+      Days, not years.</p><br />
+      <div class="container2" style="width:62%">
+      <span style="font-family: 'Alliance No.1', sans-serif; color: #808080;">&#8627; Explore platforms </span>
+      <hr style="margin-top:3%" />
+      </div>
+    </div>
+    <div id="column2">
+      <h5 style="font-size:200%; width:90%; padding-right: 5%;">Decision Advantage Across Your Organization</h5>
+      <p class="para">Bring intelligence to your entire enterprise, and to the core of the decisions and operations that matter most.</p>
+      <div class="container2" style="width:62%">
+      <span style="font-family: 'Alliance No.1', sans-serif; color: #808080;">&#8627; Explore Offerings </span>
+      <hr style="margin-top:3%" />
+      </div>
+    </div>
+    <div id="column3">
+      <h5 style="font-size:200%; width:90%; padding-right: 5%;">Full Stack Interoperability</h5>
+      <p class="para">Palantir meets you where you are, automatically connecting with and enhancing your existing data systems.</p>
+      <div class="container2" style="width:80%">
+      <span style="font-family: 'Alliance No.1', sans-serif; color: #808080;">&#8627; Explore Interoperability </span>
+      <hr style="margin-top:3%" />
+      </div>
+    </div>
+    <div id="column4" style="padding-bottom:4%">
+      <h5 style="font-size:200%; width:90%; ">Military-Grade Security and Data Privacy</h5>
+      <p class="para">Our approach to security enables collaboration instead of inhibiting it. With founding roots in intel and defense, Palantir carries certifications or attestations of compliance for the most stringent standards, including FedRamp, IL5, and more.</p>
+      <div class="container2" style="width:62%">
+      <span style="font-family: 'Alliance No.1', sans-serif; color: #808080;">&#8627; Explore Security </span>
+      <hr style="margin-top:3%" />
+      </div>
+    </div>
+    <hr style="width: 100%;">
+  </div>
+
+  <div style="margin-top: ; padding-bottom: 2%">
+        <h1 style="margin-left: 20%; font-size: 600%;" class="started">Get Started Now</h1>
+    </div>
+
+    <div class="flex-container" >
+
+        <div class="flex-child magenta" style="margin-bottom: 5%;">
+            <p class="b_01" id="b_01" style="padding-bottom: 5%; font-family: 'Alliance No.1', sans-serif;  font-size:120%; margin-top: -5%; width: 30%; margin-right:-10%">Now in over 40 sectors and industries worldwide.</h1>
+        </div>
+  
+        <div class="flex-child green" style="margin-right: 20%; margin-left: -50%; margin-top: 3%;">
+            <div class="start">Get started</div>
+        </div>
+    </div>
+
+    <footer>
+        <center>
+        <div class="container" style="margin-top:10%"> 
+            <div class="box"> 
+                <div class="box-row"> 
+                    <div class="box-cell box1"> 
+                       
+                       <div class="float-container" style="margin-top:-55%">
+                            <hr style="width: 100%;">
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;">Platforms</div>
+                                </div>
+  
+                            <div class="float-child">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Foundry</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Gotham</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Apollo</div>
+                                <hr style="width: 135%;">
+                            </div>
+  
+                        </div>
+                    </div> 
+                      
+                    <div class="box-cell box2" > 
+                       
+                       <div class="float-container" style=" margin-top:-55%;">
+                            <hr style="width: 100%;">
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Solutions</div>
+                                </div>
+  
+                            <div class="float-child">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Generate Alpha</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Offerings</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Impact studies</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Attributes</div>
+                                <hr style="width: 135%;">
+                            </div>
+  
+                        </div>
+                    </div> 
+                      
+                    <div class="box-cell box3"> 
+                        
+                        <div class="float-container" style=" margin-top:-55%;">
+                            <hr style="width: 100%;">
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Careers</div>
+                                </div>
+  
+                            <div class="float-child">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Explore Careers</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Getting Hired</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Life at Palantir</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Students</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Scholarships</div>
+                                <hr style="width: 135%;">
+                            </div>
+  
+                        </div>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        </center>
+
+        <center>
+        <div class="container"> 
+            <div class="box"> 
+                <div class="box-row"> 
+                    <div class="box-cell box1"> 
+                       
+                       <div class="float-container">
+                        <hr style="width: 100%;">
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">About Palantir</div>
+                                </div>
+  
+                            <div class="float-child">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">About</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif; font-size: 80%;">Privacy & Civil Liberties</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Information Security</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Patners</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Contact</div>
+                                <hr style="width: 135%;">
+                            </div>
+  
+                        </div>
+                    </div> 
+                      
+                    <div class="box-cell box2" > 
+
+                       <div class="float-container">
+                        <hr style="width: 100%;">
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Newsroom</div>
+                                </div>
+  
+                            <div class="float-child">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Media</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Blog</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Press Releases</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Demo Series</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Store</div>
+                                <hr style="width: 135%;">
+                            </div>
+  
+                        </div>
+                    </div> 
+                      
+                    <div class="box-cell box3"> 
+
+                        <div class="float-container" style=" margin-top:-47%;">
+                        <hr style="width: 100%;">
+
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Investors</div>
+                                </div>
+  
+                            <div class="float-child" >
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Investor Relations</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">News</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Events</div>
+                                <hr style="width: 135%;">
+                                <div class="blue" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%;">Financials</div>
+                                <hr style="width: 135%;">
+                            </div>
+  
+                        </div>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        </center>
+
+        <center>
+        <div class="container" style="margin-top:6%"> 
+            <div class="box"> 
+                <div class="box-row"> 
+                    <div class="box-cell box1"> 
+                       
+                       <div class="float-container" style="margin-top:-85%;">
+                            
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif; width: 140%"><span>&copy;</span> 2021 Palantir Technologies <br><br> Update Cookie Preferences</div>
+                                </div>
+  
+                            <div class="float-child">
+                            </div>
+  
+                        </div>
+                    </div> 
+                      
+                    <div class="box-cell box2" > 
+                       
+                       <div class="float-container" style=" margin-top:;">
+                           
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%; color:#808080;padding-bottom: 3%;">OFFERINGS</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%; padding-bottom: 3%; width: 100%;">Artificial Intelligence and Machine Learning</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Anti-money Laundering</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Auto Racing</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Data Protection</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Defense</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Edge AI</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Energy</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Health and Life Sciences</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Intelligence</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">IOT Analytics</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Retail</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Software-Defined Data Integration</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Supply Chain</div>
+                            </div>
+  
+                            <div class="float-child" style="padding-left: 10%;">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%; color:#808080;padding-bottom: 3%;">IMPACT STUDIES</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%; padding-bottom: 3%; width: 100%;">Campaign Optimization</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Customer Retention</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">ERP</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Financial Complaince</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Grupo Globo</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Network Reliability</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Power Innovation for Doosan Infracore</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Pricing Optimization</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Ringier</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Task Prioritization</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Transaction Monitoring</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Turbine Maintenance</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Warranty Optimization</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">World Food Programme</div>
+                            </div>
+  
+                        </div>
+                    </div> 
+                      
+                    <div class="box-cell box3"> 
+                        
+                        <div class="float-container" style=" margin-top:-85%;">
+                            
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%; color:#808080;padding-bottom: 3%;">ATTRIBUTES</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%; padding-bottom: 3%; width: 100%;">Secure</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Interoperable</div>
+                            </div>
+  
+                            <div class="float-child">
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 80%; color:#808080;padding-bottom: 3%;">DOCUMENTS</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%; padding-bottom: 3%; width: 100%;">Modern Slavery Statement</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Cookies</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Privacy and Security</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Terms of Use</div>
+                                <div class="green" style="font-family: 'Alliance No.1', sans-serif;font-size: 90%;padding-bottom: 3%;">Sitemap</div>
+                            </div>
+  
+                        </div>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        </center>
+
+
+  </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
